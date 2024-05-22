@@ -1,6 +1,7 @@
 import { Component } from "solid-js";
-import { TextBlock, Title } from "../atoms/Typography";
 import { useTransContext } from "@mbarzda/solid-i18next";
+
+import { TextBlock, Title } from "@atoms/Typography";
 
 const getAge = () => {
     const birthdate = new Date('2005-08-04');

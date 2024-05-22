@@ -1,5 +1,5 @@
+import { Technology } from "@atoms/Technology";
 import { Component } from "solid-js";
-import { Technology } from "../atoms/Technology";
 
 type WorkProps = {
     fromDate: string;

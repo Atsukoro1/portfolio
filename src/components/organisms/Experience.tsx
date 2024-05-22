@@ -1,10 +1,11 @@
 import { Component, createSignal } from "solid-js";
 
-import { Work } from "../molecules/Work";
-import { Project } from "../molecules/Project";
-import { Title } from "../atoms/Typography";
 import { useTransContext } from "@mbarzda/solid-i18next";
-import { useData } from "../../hooks/useData";
+
+import { Project } from "@molecules/Project";
+import { Work } from "@molecules/Work";
+import { Title } from "@atoms/Typography";
+import { useData } from "@hooks/useData";
 
 const ProjectsBlock = () => {
     const [hoveredProject, setHoveredProject] = createSignal<number | null>(null);

@@ -1,7 +1,8 @@
 import { Component } from "solid-js";
-import { NavbarItem } from "../molecules/NavbarItem";
-import { Social } from "../molecules/Social";
 import { useTransContext } from "@mbarzda/solid-i18next";
+
+import { NavbarItem } from "@molecules/NavbarItem";
+import { Social } from "@molecules/Social";
 
 export const Navbar: Component = () => {
     const [t] = useTransContext();

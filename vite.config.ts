@@ -1,20 +1,21 @@
-import { defineConfig } from 'vite';
-import solidPlugin from 'vite-plugin-solid';
-// import devtools from 'solid-devtools/vite';
+import { defineConfig } from "vite";
+import solidPlugin from "vite-plugin-solid";
+import path from "path";
 
 export default defineConfig({
-  plugins: [
-    /* 
-    Uncomment the following line to enable solid-devtools.
-    For more info see https://github.com/thetarnav/solid-devtools/tree/main/packages/extension#readme
-    */
-    // devtools(),
-    solidPlugin(),
-  ],
-  server: {
-    port: 3000,
-  },
-  build: {
-    target: 'esnext',
-  },
+	plugins: [solidPlugin()],
+	server: {
+		port: 3000,
+	},
+	build: {
+		target: "esnext",
+	},
+	resolve: {
+		alias: {
+			"@atoms": path.resolve(__dirname, "./src/components/atoms"),
+			"@molecules": path.resolve(__dirname, "./src/components/molecules"),
+			"@organisms": path.resolve(__dirname, "./src/components/organisms"),
+			"@hooks": path.resolve(__dirname, "./src/hooks"),
+		},
+	},
 });

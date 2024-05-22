@@ -1,6 +1,7 @@
 import { Component } from "solid-js";
-import { Technology } from "../atoms/Technology";
 import { FiLink2 } from 'solid-icons/fi'
+
+import { Technology } from "@atoms/Technology";
 
 type ProjectProps = {
     imagePath: string;

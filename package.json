@@ -23,6 +23,7 @@
     "@rollup/plugin-alias": "^5.1.0",
     "@types/node": "^20.12.12",
     "class-variance-authority": "^0.7.0",
+    "flag-icons": "^7.2.2",
     "i18next": "^23.11.5",
     "path": "^0.12.7",
     "solid-icons": "^1.1.0",

@@ -1,7 +1,8 @@
 {
     "common": {
         "close": "Zavřít",
-        "confirm": "Potvrdit"
+        "confirm": "Potvrdit",
+        "now": "Nyní"
     },
     "langSwitchTitle": "Switch to english",
     "header": {

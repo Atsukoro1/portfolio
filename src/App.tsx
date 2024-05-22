@@ -1,7 +1,8 @@
-import { TransProvider } from '@mbarzda/solid-i18next';
-
+import "/node_modules/flag-icons/css/flag-icons.min.css";
 import cz from "./locales/cz.json";
 import en from "./locales/en.json";
+
+import { TransProvider } from '@mbarzda/solid-i18next';
 
 import { Wrapper } from '@molecules/Wrapper';
 import { Navbar } from '@organisms/Navbar';
@@ -19,11 +20,11 @@ const resources = {
 
 export const App = () => {
   return (
-    <TransProvider options={{ resources, fallbackLng: "cz" }}>
+    <TransProvider options={{ resources, fallbackLng: "en" }}>
       <Wrapper>
         <Navbar />
 
-        <section>
+        <section class="flex flex-col gap-5">
           <Header />
           <Experience />
         </section>

@@ -11,7 +11,7 @@ export const Navbar: Component = () => {
     return (
         <section>
             <div class="lg:fixed lg:top-15">
-                <h3 class="text-xl font-semibold text-slate-200 tracking-tighter">{t('header.introduction')}</h3>
+                <h3 class="text-2xl font-normal text-slate-200 tracking-tighter">{t('header.introduction')}</h3>
                 <h1 class="text-5xl font-bold text-slate-200 tracking-tighter">{t('header.name')}</h1>
                 <h2 class="text-slate-200 text-xl mt-2 font-normal tracking-tight">
                     {t("header.title")}
@@ -28,8 +28,9 @@ export const Navbar: Component = () => {
                 </nav>
             </div>
 
-            <div class="lg:fixed lg:bottom-10 mt-5 relative">
+            <div class="lg:fixed lg:bottom-10 flex flex-col gap-3 mt-5 relative">
                 <LanguageSwitch />
+
                 <ul class="flex flex-row">
                     <li class="mr-5">
                         <Social href="https://github.com/Atsukoro1" icon="github" />

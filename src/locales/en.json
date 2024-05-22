@@ -1,7 +1,8 @@
 {
     "common": {
         "close": "Close",
-        "confirm": "Confirm"
+        "confirm": "Confirm",
+        "now": "Now"
     },
     "langSwitchTitle": "Přepnout do češtiny",
     "header": {

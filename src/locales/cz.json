@@ -1,5 +1,57 @@
 {
     "header": {
-        "title": "Medior Web developer v Blindspot AI"
+        "title": "Medior Web developer v Blindspot AI",
+        "description": "Buduju inovativní, moderní a uživatelsky přívětivé webové stránky a aplikace.",
+        "options": {
+            "aboutMe": "O mně",
+            "experience": "Pracovní zkušenosti",
+            "projects": "Projekty"
+        }
+    },
+    "experience": {
+        "title": "O mně",
+        "textShort": "Jsem {{age}}letý student a nadšenec do technologií. Své znalosti a dovednosti jsem vybudoval primárně v oblasti Web developmentu kde již několik let vyvíjím webové stránky a aplikace pro všemožné Eshopy a živnostníky.",
+        "textWorkStuff": "Mimo web development se věnuji UNIXovým systémům a jejich správě a grafickému vyobrazení (ricing), kyberbezpečnosti (HackTheBox, TryHackMe challenge) a taky nějaké té síťařině.",
+        "textHobbies": "Mezi mé zájmy mimo IT patří hlavně můj pes 🐕, strategické počítačové hry a rodina."
+    },
+    "projects": {
+        "title": "Projekty",
+        "content": {
+            "doucInfo": {
+                "title": "Douc.info",
+                "description": "Douč.info je eshop a zároven platforma pro doučování, která spojuje doučujícího a doučované kteří mají zájem dozvědět se více o právu a účetnictví. Obsahuje funkční platební systém."
+            },
+            "contalk": {
+                "title": "Meetu",
+                "description": "Meetu je Twitter klon vyvíjený v rámci finální maturitní práce na téma Vývoj webové aplikace. Obsahuje komplexní backend s CRUD operacemi pro Tweety a real-time chat."
+            },
+            "novaZeme": {
+                "title": "Nová země",
+                "description": "End-to-end šifrovaná decentralizovaná mobilní aplikace postavená pro vytváření a spravování soukromých skupin. Aplikace není veřejná, pro více informací mě kontaktujte."
+            }
+        }
+    },
+    "work": {
+        "title": "Pracovní zkušenosti",
+        "content": {
+            "blindspot": {
+                "title": "Medior Web developer",
+                "company": "Blindspot AI",
+                "position": "Frontend developer",
+                "description": ""
+            },
+            "viceverse": {
+                "title": "Senior frontend developer",
+                "company": "Viceverse",
+                "position": "Frontend developer",
+                "description": "Vyvíjel jsem zde eshopy bez použití CMS systémů. Vše bylo vyvíjeno od základu. Kromě samotného vývoje jsem byl součástí navrhování architektury a samotné údržby co se týče serverů."
+            },
+            "woolville": {
+                "title": "Webmaster",
+                "company": "Ovečkárna",
+                "position": "Webmaster",
+                "description": "Managoval jsem web Ovečkárny, který je postaven na CMS systému Silius. Nahazoval jsem nové produkty, aktualizoval jsem informace a také jsem se staral o SEO."
+            }
+        }
     }
 }

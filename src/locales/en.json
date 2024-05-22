@@ -1,5 +1,57 @@
 {
     "header": {
-        "title": "Medior Web developer in Blindspot AI"
+        "title": "Medior Web Developer at Blindspot AI",
+        "description": "Building innovative, modern, and user-friendly websites and applications.",
+        "options": {
+            "aboutMe": "About Me",
+            "experience": "Work Experience",
+            "projects": "Projects"
+        }
+    },
+    "experience": {
+        "title": "About Me",
+        "textShort": "I am a {{age}}-year-old student and technology enthusiast. I have primarily built my knowledge and skills in the field of Web development, where I have been developing websites and applications for various e-shops and freelancers for several years.",
+        "textWorkStuff": "Besides web development, I am involved in UNIX systems and their administration and graphical customization (ricing), cybersecurity (HackTheBox, TryHackMe challenges), and some networking.",
+        "textHobbies": "Outside of IT, my main interests include my dog 🐕, strategic computer games, and my family."
+    },
+    "projects": {
+        "title": "Projects",
+        "content": {
+            "doucInfo": {
+                "title": "Douc.info",
+                "description": "Douc.info is an e-shop and a tutoring platform that connects tutors and students interested in learning more about law and accounting. It includes a functional payment system."
+            },
+            "contalk": {
+                "title": "Meetu",
+                "description": "Meetu is a Twitter clone developed as part of the final graduation project on the topic of Web Application Development. It includes a complex backend with CRUD operations for Tweets and real-time chat."
+            },
+            "novaZeme": {
+                "title": "New Land",
+                "description": "End-to-end encrypted decentralized mobile application built for creating and managing private groups. The app is not public; for more information, please contact me."
+            }
+        }
+    },
+    "work": {
+        "title": "Work Experience",
+        "content": {
+            "blindspot": {
+                "title": "Medior Web Developer",
+                "company": "Blindspot AI",
+                "position": "Frontend Developer",
+                "description": ""
+            },
+            "viceverse": {
+                "title": "Senior Frontend Developer",
+                "company": "Viceverse",
+                "position": "Frontend Developer",
+                "description": "I developed e-shops here without using CMS systems. Everything was developed from scratch. Besides the development itself, I was involved in architecture design and server maintenance."
+            },
+            "woolville": {
+                "title": "Webmaster",
+                "company": "Woolville",
+                "position": "Webmaster",
+                "description": "I managed the Woolville website, which is built on the Silius CMS system. I added new products, updated information, and took care of SEO."
+            }
+        }
     }
 }

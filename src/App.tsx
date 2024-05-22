@@ -16,9 +16,9 @@ const resources = {
   }
 }
 
-const App = () => {
+export const App = () => {
   return (
-    <TransProvider options={{ resources }} lng="en">
+    <TransProvider options={{ resources }} lng="cz">
       <Wrapper>
         <Navbar />
 
@@ -30,5 +30,3 @@ const App = () => {
     </TransProvider>
   )
 };
-
-export default App;

@@ -1,5 +1,6 @@
 import { Component } from "solid-js";
-import { T, TextBlock, Title } from "../atoms/Typography";
+import { TextBlock, Title } from "../atoms/Typography";
+import { useTransContext } from "@mbarzda/solid-i18next";
 
 const getAge = () => {
     const birthdate = new Date('2005-08-04');
@@ -10,23 +11,22 @@ const getAge = () => {
 };
 
 export const Header: Component = () => {
+    const [t] = useTransContext();
+
     return (
         <div class="md:mt-0 mt-10">
-            <Title>O mně</Title>
+            <Title>{t('experience.title')}</Title>
 
             <TextBlock top>
-                Jsem {getAge()}letý student a nadšenec do technologií. Své znalosti a dovednosti jsem vybudoval primárně
-                v oblasti <T highlighted>Web developmentu</T> kde již několik let
-                vyvíjím <T highlighted>webové stránky a aplikace</T> pro všemožné Eshopy a živnostníky.
+                {t('experience.textShort', { age: getAge() })}
             </TextBlock>
 
             <TextBlock>
-                Mimo web development se věnuji UNIXovým systémům a jejich správě a grafickému
-                vyobrazení (ricing), <T highlighted>fdfd</T> (HackTheBox, TryHackMe challenge) a taky nějaké té síťařině.
+                {t('experience.textWorkStuff')}
             </TextBlock>
 
             <TextBlock>
-                Mezi mé zájmy mimo IT patří hlavně můj pes 🐕, strategické počítačové hry a rodina.
+                {t('experience.textHobbies')}
             </TextBlock>
         </div>
     )

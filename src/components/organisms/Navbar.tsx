@@ -1,14 +1,17 @@
 import { Component } from "solid-js";
 import { NavbarItem } from "../molecules/NavbarItem";
 import { Social } from "../molecules/Social";
+import { Trans, useTransContext } from "@mbarzda/solid-i18next";
 
 export const Navbar: Component = () => {
+    const [t] = useTransContext();
+
     return (
         <section>
-            <div class="lg:top-15">
+            <div class="lg:fixed lg:top-15">
                 <h1 class="text-5xl font-bold text-slate-200 tracking-tighter">Jakub Dorničák</h1>
                 <h2 class="text-slate-200 text-xl mt-2 font-normal tracking-tight">
-                    Medior Web developer v Blindspot AI
+                    <Trans key="header.title">Hello!</Trans>
                 </h2>
 
                 <p class="table w-[310px] font-normal mt-2.5 text-slate-400">

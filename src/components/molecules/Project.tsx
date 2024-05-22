@@ -1,59 +1,114 @@
-import { Component } from "solid-js";
-import { FiLink2 } from 'solid-icons/fi'
+import { Component, createSignal } from "solid-js";
+import { FiLink2 } from 'solid-icons/fi';
+import { twMerge } from "tailwind-merge";
 
 import { Technology } from "@atoms/Technology";
+import { Dialog } from "./Dialog";
 
-type ProjectProps = {
+export enum ProjectType {
+    Link = "link",
+    Dialog = "dialog",
+    None = "none"
+}
+
+interface ProjectProps {
     imagePath: string;
     title: string;
-    href: string | null;
     description: string;
     technologies: string[];
+    href: string | null;
     hovered: boolean | null;
-    onHoverStart: () => void;
-    onHoverStop: () => void;
+    type: ProjectType;
+    onClick?: VoidFunction;
+    onHoverStart: VoidFunction;
+    onHoverStop: VoidFunction;
+}
+
+const ProjectImageSection: Component<ProjectProps> = ({
+    title,
+    imagePath
+}) => {
+    return (
+        <section>
+            <img
+                src={`/src/assets/projects/${imagePath}`}
+                alt={title}
+                class="rounded-lg aspect-square object-cover w-[800px] h-[200px]"
+            />
+        </section>
+    );
+};
+
+const ProjectContentSection: Component<ProjectProps> = ({
+    title,
+    type,
+    description,
+    technologies
+}) => {
+    return (
+        <section>
+            <div class="flex flex-row items-center gap-1.5 align-middle">
+                <h2 class="group-hover:text-sky-500 text-slate-300">
+                    {title}
+                </h2>
+
+                {type === ProjectType.Link && <FiLink2 class="text-slate-300" />}
+            </div>
+
+            <p class="text-slate-400 text-sm mt-3">{description}</p>
+
+            <div class="w-fit gap-2 mt-4 flex flex-wrap">
+                {technologies.map((technology) => (
+                    <Technology content={technology} />
+                ))}
+            </div>
+        </section>
+    );
 };
 
 export const Project: Component<ProjectProps> = (props) => {
+    const [dialogOpen, setDialogOpen] = createSignal<boolean>(false);
+    const toggleDialog = () => setDialogOpen(!dialogOpen());
+
+    const onProjectClick = () => {
+        switch (props.type) {
+            case ProjectType.Link:
+                window.open(props.href ?? "", "_blank");
+                break;
+
+            case ProjectType.Dialog:
+                toggleDialog();
+                break;
+        }
+    };
+
     return (
-        <a target="blank" {...props.href && { href: props.href }}>
-            <div
-                class={`${props.hovered === null ? "opacity-100" : (props.hovered ? "opacity-100" : "opacity-40")} flex group ${props.href && "hover:cursor-pointer"} flex-col gap-4 p-4 border border-transparent transition-all ease-in-out transition-500 rounded-lg hover:bg-slate-200 hover:bg-opacity-[3%] hover:border-slate-600 hover:border-opacity-30`}
+        <>
+            <button
+                type="button"
+                onClick={onProjectClick}
+                class={twMerge([
+                    props.hovered === null ? "opacity-100" : (props.hovered ? "opacity-100" : "opacity-40"),
+                    props.type === ProjectType.Link && "hover:cursor-pointer",
+                    "transition-all text-left ease-in-out transition-500",
+                    "flex group flex-col gap-4 p-4 border border-transparent rounded-lg",
+                    "hover:bg-slate-200 hover:bg-opacity-[3%] hover:border-slate-600 hover:border-opacity-30"
+                ])}
                 onMouseEnter={props.onHoverStart}
                 onMouseLeave={props.onHoverStop}
             >
-                <section>
-                    <img
-                        src={`/src/assets/projects/${props.imagePath}`}
-                        alt={props.title}
-                        class="rounded-lg aspect-square object-cover w-[800px] h-[200px]"
-                    />
-                </section>
+                <ProjectImageSection {...props} />
+                <ProjectContentSection {...props} />
+            </button>
 
-                <section>
-                    <div class="flex flex-row items-center gap-1.5 align-middle">
-                        <h2 class="group-hover:text-sky-500 text-slate-300">
-                            {props.title}
-                        </h2>
-
-                        {props.href &&
-                            (
-                                <a href={props.href}>
-                                    <FiLink2 class="text-slate-300" />
-                                </a>
-                            )
-                        }
-                    </div>
-
-                    <p class="text-slate-400 text-sm mt-3">{props.description}</p>
-
-                    <div class="w-fit gap-2 mt-4 flex flex-wrap">
-                        {props.technologies.map((technology) => (
-                            <Technology content={technology} />
-                        ))}
-                    </div>
-                </section>
-            </div>
-        </a>
-    )
+            {props.type === ProjectType.Dialog && (
+                <Dialog
+                    title={props.title}
+                    open={dialogOpen()}
+                    subTitle={props.description}
+                    onClose={toggleDialog}
+                />
+            )}
+        </>
+    );
 };

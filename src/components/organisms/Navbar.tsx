@@ -26,17 +26,19 @@ export const Navbar: Component = () => {
                 </nav>
             </div>
 
-            <ul class="flex flex-row mt-5 lg:fixed lg:bottom-10 relative">
-                <li class="mr-5">
-                    <Social href="https://github.com/Atsukoro1" icon="github" />
-                </li>
-                <li class="mr-5">
-                    <Social href="https://www.linkedin.com/in/jakub-dorni%C4%8D%C3%A1k-b6953423b/" icon="linkedin" />
-                </li>
-                <li class="mr-5">
-                    <Social href="https://app.hackthebox.com/users/692313" icon="hackthebox" />
-                </li>
-            </ul>
+            <div class="lg:fixed lg:bottom-10 mt-5 relative">
+                <ul class="flex flex-row">
+                    <li class="mr-5">
+                        <Social href="https://github.com/Atsukoro1" icon="github" />
+                    </li>
+                    <li class="mr-5">
+                        <Social href="https://www.linkedin.com/in/jakub-dorni%C4%8D%C3%A1k-b6953423b/" icon="linkedin" />
+                    </li>
+                    <li class="mr-5">
+                        <Social href="https://app.hackthebox.com/users/692313" icon="hackthebox" />
+                    </li>
+                </ul>
+            </div>
         </section>
     )
 }

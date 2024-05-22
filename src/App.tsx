@@ -1,11 +1,19 @@
-import type { Component } from 'solid-js';
+import { Navbar } from './components/organisms/Navbar';
+import { Header } from './components/organisms/Header';
+import { Experience } from './components/organisms/Experience';
+import { Wrapper } from './components/molecules/Wrapper';
 
-const App: Component = () => {
+const App = () => {
   return (
-    <div>
-      <h1>Ahoj</h1>
-    </div>
-  );
+    <Wrapper>
+      <Navbar />
+
+      <section>
+        <Header />
+        <Experience />
+      </section>
+    </Wrapper>
+  )
 };
 
 export default App;

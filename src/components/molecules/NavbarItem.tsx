@@ -1,4 +1,5 @@
 import { Component } from "solid-js";
+import { twMerge } from "tailwind-merge";
 
 type NavbarItemProps = {
     title: string;
@@ -19,7 +20,10 @@ export const NavbarItem: Component<NavbarItemProps> = ({ title, location }) => {
             onClick={onScrollClick}
             class="flex pb-1.5 hover:cursor-pointer flex-row group w-fit"
         >
-            <div class="mt-3 duration-400  transition-all ease-in-out h-[1px] group-hover:w-15 w-8 group-hover:bg-slate-200 bg-slate-500 align-middle" />
+            <div class={twMerge([
+                "mt-3 duration-400  transition-all ease-in-out h-[1px] bg-slate-500 align-middle",
+                "w-8 group-hover:w-12"
+            ])} />
 
             <h3 class="text-slate-400 ml-3 group-hover:text-slate-200">
                 {title}

@@ -2,7 +2,7 @@ import { Component, createSignal } from "solid-js";
 
 import { useTransContext } from "@mbarzda/solid-i18next";
 
-import { Project, ProjectType } from "@molecules/Project";
+import { Project } from "@molecules/Project";
 import { Work } from "@molecules/Work";
 import { Title } from "@atoms/Typography";
 import { useData } from "@hooks/useData";
@@ -21,7 +21,6 @@ const ProjectsBlock = () => {
                     onHoverStop={() => setHoveredProject(null)}
                     href={project.href}
                     hovered={hoveredProject() === null ? null : hoveredProject() === index}
-                    type={ProjectType.Dialog}
                 />
             ))}
         </div>

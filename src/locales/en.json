@@ -1,4 +1,8 @@
 {
+    "common": {
+        "close": "Close",
+        "confirm": "Confirm"
+    },
     "langSwitchTitle": "Přepnout do češtiny",
     "header": {
         "title": "Medior Web Developer at Blindspot AI",
@@ -12,8 +16,8 @@
     "experience": {
         "title": "About Me",
         "textShort": "I am a {{age}}-year-old student and technology enthusiast. I have primarily built my knowledge and skills in the field of Web development, where I have been developing websites and applications for various e-shops and freelancers for several years.",
-        "textWorkStuff": "Besides web development, I am involved in UNIX systems and their administration and graphical customization (ricing), cybersecurity (HackTheBox, TryHackMe challenges), and some networking.",
-        "textHobbies": "Outside of IT, my main interests include my dog 🐕, strategic computer games, and my family."
+        "textWorkStuff": "Besides web development, I am involved in cybersecurity which I'm training on HackTheBox and TryHackMe & networking (system administration).",
+        "textHobbies": "Outside of IT, my main interests include DJ'ing, virtual reality (VRChat) and psychology."
     },
     "projects": {
         "title": "Projects",
@@ -28,7 +32,11 @@
             },
             "novaZeme": {
                 "title": "New Land",
-                "description": "End-to-end encrypted decentralized mobile application built for creating and managing private groups. The app is not public; for more information, please contact me."
+                "description": "End-to-end encrypted decentralized mobile application built for creating and managing private groups. The app is not public; for more information, please contact me.",
+                "dialog": {
+                    "title": "New Land",
+                    "description": "This project is private and is not available for public viewing. If you wan't to get more information about this project, please contact me."
+                }
             }
         }
     },

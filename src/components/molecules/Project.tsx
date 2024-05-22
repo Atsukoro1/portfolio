@@ -1,4 +1,4 @@
-import { Component, createSignal } from "solid-js";
+import { Component, JSX, createSignal } from "solid-js";
 import { FiLink2 } from 'solid-icons/fi';
 import { twMerge } from "tailwind-merge";
 
@@ -16,6 +16,10 @@ interface ProjectProps {
     title: string;
     description: string;
     technologies: string[];
+    dialog?: {
+        title: string;
+        content?: string | JSX.Element;
+    };
     href: string | null;
     hovered: boolean | null;
     type: ProjectType;
@@ -31,7 +35,7 @@ const ProjectImageSection: Component<ProjectProps> = ({
     return (
         <section>
             <img
-                src={`/src/assets/projects/${imagePath}`}
+                src={imagePath}
                 alt={title}
                 class="rounded-lg aspect-square object-cover w-[800px] h-[200px]"
             />
@@ -103,9 +107,9 @@ export const Project: Component<ProjectProps> = (props) => {
 
             {props.type === ProjectType.Dialog && (
                 <Dialog
-                    title={props.title}
+                    title={props.dialog?.title}
                     open={dialogOpen()}
-                    subTitle={props.description}
+                    subTitle={props.dialog?.content}
                     onClose={toggleDialog}
                 />
             )}

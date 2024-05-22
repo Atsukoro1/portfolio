@@ -1,6 +1,36 @@
 import { useTransContext } from "@mbarzda/solid-i18next";
+import { ProjectType as TypeOfProject } from "@molecules/Project";
+import { JSX } from "solid-js/jsx-runtime";
 
-export const useData = () => {
+type WorkType = {
+	fromDate: string;
+	toDate: string;
+	title: string;
+	company: string;
+	description: string;
+	position: string;
+	technologies: string[];
+};
+
+type ProjectType = {
+	imagePath: string;
+	title: string;
+	href: string | null;
+	description: string;
+	technologies: string[];
+	type: TypeOfProject;
+	dialog?: {
+		title: string;
+		content?: JSX.Element | string;
+	}
+};
+
+interface Data {
+	work: WorkType[];
+	projects: ProjectType[];
+}
+
+export const useData = (): Data => {
 	const [t] = useTransContext();
 
 	return {
@@ -45,12 +75,13 @@ export const useData = () => {
 				company: t("work.content.woolville.company"),
 				description: t("work.content.woolville.description"),
 				position: t("work.content.wollville.position"),
-				technologies: ["Silius"],
+				technologies: ["Silius", "SEO", "Google Analytics"],
 			},
 		],
 		projects: [
 			{
-				imagePath: "/doucinfo.png",
+				type: TypeOfProject.Link,
+				imagePath: "https://files.catbox.moe/bk49tl.png",
 				title: t("projects.content.doucInfo.title"),
 				href: "https://douc.info",
 				description: t("projects.content.doucInfo.description"),
@@ -63,7 +94,8 @@ export const useData = () => {
 				],
 			},
 			{
-				imagePath: "/contalk.png",
+				type: TypeOfProject.Link,
+				imagePath: "https://files.catbox.moe/y64r39.png",
 				title: t("projects.content.contalk.title"),
 				href: "https://github.com/Atsukoro1/meetu",
 				description: t("projects.content.contalk.description"),
@@ -78,7 +110,8 @@ export const useData = () => {
 				],
 			},
 			{
-				imagePath: "/novazeme.png",
+				type: TypeOfProject.Dialog,
+				imagePath: "https://files.catbox.moe/fp4j4k.png",
 				title: t("projects.content.novaZeme.title"),
 				href: null,
 				description: t("projects.content.novaZeme.description"),
@@ -90,6 +123,10 @@ export const useData = () => {
 					"Material UI",
 					"Typescript",
 				],
+				dialog: {
+					title: t("projects.content.novaZeme.dialog.title"),
+					content: t('projects.content.novaZeme.dialog.description')
+				}
 			},
 		],
 	};

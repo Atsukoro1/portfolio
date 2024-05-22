@@ -19,7 +19,7 @@ const resources = {
 
 export const App = () => {
   return (
-    <TransProvider options={{ resources, fallbackLng: "en" }}>
+    <TransProvider options={{ resources, fallbackLng: "cz" }}>
       <Wrapper>
         <Navbar />
 

@@ -10,6 +10,7 @@ export const Navbar: Component = () => {
     return (
         <section>
             <div class="lg:fixed lg:top-15">
+                <h3 class="text-xl font-semibold text-slate-200 tracking-tighter">👋 Hello, I'm</h3>
                 <h1 class="text-5xl font-bold text-slate-200 tracking-tighter">Jakub Dorničák</h1>
                 <h2 class="text-slate-200 text-xl mt-2 font-normal tracking-tight">
                     {t("header.title")}

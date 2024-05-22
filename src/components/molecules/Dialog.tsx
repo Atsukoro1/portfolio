@@ -1,4 +1,5 @@
 import { Button } from "@atoms/Button";
+import { useTransContext } from "@mbarzda/solid-i18next";
 import { Component, JSX, Show } from "solid-js";
 import { twMerge } from "tailwind-merge";
 
@@ -15,13 +16,15 @@ const DialogTitle: Component<Pick<DialogProps, "title">> = ({
 }) => {
     return (
         <div class="pb-4 flex flex-col gap-4">
-            <h1 class="text-slate-400 text-3xl font-bold">{title}</h1>
-            <hr class="border-slate-600" />
+            <h1 class="text-slate-200 text-3xl font-bold">{title}</h1>
+            <hr class="border-slate-700" />
         </div>
     )
 }
 
 export const Dialog: Component<DialogProps> = (props) => {
+    const [t] = useTransContext();
+
     return (
         <Show when={props.open}>
             <div class={twMerge([
@@ -40,7 +43,7 @@ export const Dialog: Component<DialogProps> = (props) => {
                             variant="danger"
                             onClick={props.onClose}
                         >
-                            Close
+                            {t('common.close')}
                         </Button>
 
                         {props.onConfirm && (
@@ -48,7 +51,7 @@ export const Dialog: Component<DialogProps> = (props) => {
                                 variant="primary"
                                 onClick={props.onConfirm}
                             >
-                                Confirm
+                                {t('common.confirm')}
                             </Button>
                         )}
                     </div>

@@ -3,6 +3,7 @@ import { useTransContext } from "@mbarzda/solid-i18next";
 
 import { NavbarItem } from "@molecules/NavbarItem";
 import { Social } from "@molecules/Social";
+import { LanguageSwitch } from "@molecules/LanguageSwitch";
 
 export const Navbar: Component = () => {
     const [t] = useTransContext();
@@ -10,8 +11,8 @@ export const Navbar: Component = () => {
     return (
         <section>
             <div class="lg:fixed lg:top-15">
-                <h3 class="text-xl font-semibold text-slate-200 tracking-tighter">👋 Hello, I'm</h3>
-                <h1 class="text-5xl font-bold text-slate-200 tracking-tighter">Jakub Dorničák</h1>
+                <h3 class="text-xl font-semibold text-slate-200 tracking-tighter">{t('header.introduction')}</h3>
+                <h1 class="text-5xl font-bold text-slate-200 tracking-tighter">{t('header.name')}</h1>
                 <h2 class="text-slate-200 text-xl mt-2 font-normal tracking-tight">
                     {t("header.title")}
                 </h2>
@@ -28,6 +29,7 @@ export const Navbar: Component = () => {
             </div>
 
             <div class="lg:fixed lg:bottom-10 mt-5 relative">
+                <LanguageSwitch />
                 <ul class="flex flex-row">
                     <li class="mr-5">
                         <Social href="https://github.com/Atsukoro1" icon="github" />

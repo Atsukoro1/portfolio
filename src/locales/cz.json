@@ -1,8 +1,14 @@
 {
-    "langSwitchTitle": "Switch to English",
+    "common": {
+        "close": "Zavřít",
+        "confirm": "Potvrdit"
+    },
+    "langSwitchTitle": "Switch to english",
     "header": {
-        "title": "Medior Web developer v Blindspot AI",
-        "description": "Buduju inovativní, moderní a uživatelsky přívětivé webové stránky a aplikace.",
+        "introduction": "👋 Ahoj, jmenuji se",
+        "name": "Jakub Dorničák",
+        "title": "Medior Web Developer ve společnosti Blindspot AI",
+        "description": "Vytvářím inovativní, moderní a uživatelsky přívětivé webové stránky a aplikace.",
         "options": {
             "aboutMe": "O mně",
             "experience": "Pracovní zkušenosti",
@@ -11,24 +17,28 @@
     },
     "experience": {
         "title": "O mně",
-        "textShort": "Jsem {{age}}letý student a nadšenec do technologií. Své znalosti a dovednosti jsem vybudoval primárně v oblasti Web developmentu kde již několik let vyvíjím webové stránky a aplikace pro všemožné Eshopy a živnostníky.",
-        "textWorkStuff": "Mimo web development se věnuji UNIXovým systémům a jejich správě a grafickému vyobrazení (ricing), kyberbezpečnosti (HackTheBox, TryHackMe challenge) a taky nějaké té síťařině.",
-        "textHobbies": "Mezi mé zájmy mimo IT patří hlavně můj pes 🐕, strategické počítačové hry a rodina."
+        "textShort": "Jsem {{age}}-letý student a nadšenec do technologií. Především jsem si vybudoval své znalosti a dovednosti v oblasti webového vývoje, kde jsem několik let vyvíjel webové stránky a aplikace pro různé e-shopy a freelancery.",
+        "textWorkStuff": "Kromě webového vývoje se věnuji kybernetické bezpečnosti, kterou trénuji na HackTheBox a TryHackMe, a síťové správě (systémová administrace).",
+        "textHobbies": "Mimo IT jsou mé hlavní zájmy DJ'ing, virtuální realita (VRChat) a psychologie."
     },
     "projects": {
         "title": "Projekty",
         "content": {
             "doucInfo": {
                 "title": "Douc.info",
-                "description": "Douč.info je eshop a zároven platforma pro doučování, která spojuje doučujícího a doučované kteří mají zájem dozvědět se více o právu a účetnictví. Obsahuje funkční platební systém."
+                "description": "Douc.info je e-shop a platforma pro doučování, která spojuje lektory a studenty se zájmem o právo a účetnictví. Obsahuje funkční platební systém."
             },
             "contalk": {
                 "title": "Meetu",
-                "description": "Meetu je Twitter klon vyvíjený v rámci finální maturitní práce na téma Vývoj webové aplikace. Obsahuje komplexní backend s CRUD operacemi pro Tweety a real-time chat."
+                "description": "Meetu je klon Twitteru vyvinutý jako závěrečný absolventský projekt na téma vývoje webových aplikací. Obsahuje komplexní backend s CRUD operacemi pro Tweety a chat v reálném čase."
             },
             "novaZeme": {
-                "title": "Nová země",
-                "description": "End-to-end šifrovaná decentralizovaná mobilní aplikace postavená pro vytváření a spravování soukromých skupin. Aplikace není veřejná, pro více informací mě kontaktujte."
+                "title": "Nová Země",
+                "description": "End-to-end šifrovaná decentralizovaná mobilní aplikace vytvořená pro vytváření a správu soukromých skupin. Aplikace není veřejná; pro více informací mě prosím kontaktujte.",
+                "dialog": {
+                    "title": "Nová Země",
+                    "description": "Tento projekt je soukromý a není dostupný k veřejnému prohlížení. Pokud chcete získat více informací o tomto projektu, prosím kontaktujte mě."
+                }
             }
         }
     },
@@ -36,22 +46,22 @@
         "title": "Pracovní zkušenosti",
         "content": {
             "blindspot": {
-                "title": "Medior Web developer",
+                "title": "Medior Web Developer",
                 "company": "Blindspot AI",
-                "position": "Frontend developer",
+                "position": "Frontend Developer",
                 "description": ""
             },
             "viceverse": {
-                "title": "Senior frontend developer",
+                "title": "Senior Frontend Developer",
                 "company": "Viceverse",
-                "position": "Frontend developer",
-                "description": "Vyvíjel jsem zde eshopy bez použití CMS systémů. Vše bylo vyvíjeno od základu. Kromě samotného vývoje jsem byl součástí navrhování architektury a samotné údržby co se týče serverů."
+                "position": "Frontend Developer",
+                "description": "Vyvíjel jsem zde e-shopy bez použití CMS systémů. Vše bylo vyvíjeno od nuly. Kromě samotného vývoje jsem se podílel na návrhu architektury a údržbě serverů."
             },
             "woolville": {
                 "title": "Webmaster",
-                "company": "Ovečkárna",
+                "company": "Woolville",
                 "position": "Webmaster",
-                "description": "Managoval jsem web Ovečkárny, který je postaven na CMS systému Silius. Nahazoval jsem nové produkty, aktualizoval jsem informace a také jsem se staral o SEO."
+                "description": "Spravoval jsem web Woolville, který je postaven na Silius CMS systému. Přidával jsem nové produkty, aktualizoval informace a staral se o SEO."
             }
         }
     }

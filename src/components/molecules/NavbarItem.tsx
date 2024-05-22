@@ -6,10 +6,10 @@ type NavbarItemProps = {
     location: number;
 };
 
-export const NavbarItem: Component<NavbarItemProps> = ({ title, location }) => {
+export const NavbarItem: Component<NavbarItemProps> = (props) => {
     const onScrollClick = () => {
         window.scrollTo({
-            top: location,
+            top: props.location,
             behavior: 'smooth'
         });
     };
@@ -26,7 +26,7 @@ export const NavbarItem: Component<NavbarItemProps> = ({ title, location }) => {
             ])} />
 
             <h3 class="text-slate-400 ml-3 group-hover:text-slate-200">
-                {title}
+                {props.title}
             </h3>
         </button>
     )

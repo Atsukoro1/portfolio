@@ -28,41 +28,33 @@ interface ProjectProps {
     onHoverStop: VoidFunction;
 }
 
-const ProjectImageSection: Component<ProjectProps> = ({
-    title,
-    imagePath
-}) => {
+const ProjectImageSection: Component<ProjectProps> = (props) => {
     return (
         <section>
             <img
-                src={imagePath}
-                alt={title}
+                src={props.imagePath}
+                alt={props.title}
                 class="rounded-lg aspect-square object-cover w-[800px] h-[200px]"
             />
         </section>
     );
 };
 
-const ProjectContentSection: Component<ProjectProps> = ({
-    title,
-    type,
-    description,
-    technologies
-}) => {
+const ProjectContentSection: Component<ProjectProps> = (props) => {
     return (
         <section>
             <div class="flex flex-row items-center gap-1.5 align-middle">
                 <h2 class="group-hover:text-sky-500 text-slate-300">
-                    {title}
+                    {props.title}
                 </h2>
 
-                {type === ProjectType.Link && <FiLink2 class="text-slate-300" />}
+                {props.type === ProjectType.Link && <FiLink2 class="text-slate-300" />}
             </div>
 
-            <p class="text-slate-400 text-sm mt-3">{description}</p>
+            <p class="text-slate-400 text-sm mt-3">{props.description}</p>
 
             <div class="w-fit gap-2 mt-4 flex flex-wrap">
-                {technologies.map((technology) => (
+                {props.technologies.map((technology) => (
                     <Technology content={technology} />
                 ))}
             </div>

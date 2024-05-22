@@ -11,12 +11,10 @@ interface DialogProps {
     open?: boolean;
 }
 
-const DialogTitle: Component<Pick<DialogProps, "title">> = ({
-    title
-}) => {
+const DialogTitle: Component<Pick<DialogProps, "title">> = (props) => {
     return (
         <div class="pb-4 flex flex-col gap-4">
-            <h1 class="text-slate-200 text-3xl font-bold">{title}</h1>
+            <h1 class="text-slate-200 text-3xl font-bold">{props.title}</h1>
             <hr class="border-slate-700" />
         </div>
     )

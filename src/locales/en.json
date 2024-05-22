@@ -5,6 +5,8 @@
     },
     "langSwitchTitle": "Přepnout do češtiny",
     "header": {
+        "introduction": "👋 Hello, my name is",
+        "name": "Jakub Dorničák",
         "title": "Medior Web Developer at Blindspot AI",
         "description": "Building innovative, modern, and user-friendly websites and applications.",
         "options": {

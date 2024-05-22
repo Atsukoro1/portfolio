@@ -18,10 +18,10 @@ const IconRenderer = (icon: SocialProps['icon']) => {
     }
 }
 
-export const Social: Component<SocialProps> = ({ href, icon }) => {
+export const Social: Component<SocialProps> = (props) => {
     return (
-        <a class='text-gray-300' target="about" href={href}>
-            {IconRenderer(icon)}
+        <a class='text-gray-300' target="about" href={props.href}>
+            {IconRenderer(props.icon)}
         </a>
     )
 }

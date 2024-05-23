@@ -48,28 +48,6 @@ export const ProjectsBlock: Component = () => {
             />
 
             <Project
-                title={t("projects.content.novaZeme.title")}
-                technologies={[
-                    "Express.JS",
-                    "Node.js",
-                    "React Native",
-                    "Tailwind CSS",
-                    "Material UI",
-                    "Typescript",
-                ]}
-                type={ProjectType.Dialog}
-                description={t("projects.content.novaZeme.description")}
-                imagePath="https://files.catbox.moe/fp4j4k.png"
-                onHoverStart={() => setHoveredProject(3)}
-                onHoverStop={() => setHoveredProject(null)}
-                hovered={hoveredProject() === null ? null : hoveredProject() === 3}
-                dialog={{
-                    title: t("projects.content.novaZeme.dialog.title"),
-                    content: t("projects.content.novaZeme.dialog.description"),
-                }}
-            />
-
-            <Project
                 title={t("projects.content.waifuu.title")}
                 technologies={[
                     "Next.js",
@@ -85,9 +63,9 @@ export const ProjectsBlock: Component = () => {
                 href="https://github.com/Atsukoro1/waifuu"
                 description={t("projects.content.waifuu.description")}
                 imagePath="https://files.catbox.moe/97f7c5.png"
-                onHoverStart={() => setHoveredProject(4)}
+                onHoverStart={() => setHoveredProject(3)}
                 onHoverStop={() => setHoveredProject(null)}
-                hovered={hoveredProject() === null ? null : hoveredProject() === 4}
+                hovered={hoveredProject() === null ? null : hoveredProject() === 3}
                 dialog={{
                     title: t("projects.content.novaZeme.dialog.title"),
                     content: t("projects.content.novaZeme.dialog.description"),

@@ -33,14 +33,6 @@
                 "title": "Meetu",
                 "description": "Meetu is a Twitter clone developed as part of the final graduation project on the topic of Web Application Development. It includes a complex backend with CRUD operations for Tweets and real-time chat."
             },
-            "novaZeme": {
-                "title": "New Land",
-                "description": "End-to-end encrypted decentralized mobile application built for creating and managing private groups. The app is not public; for more information, please contact me.",
-                "dialog": {
-                    "title": "New Land",
-                    "description": "This project is private and is not available for public viewing. If you wan't to get more information about this project, please contact me."
-                }
-            },
             "waifuu": {
                 "title": "Waifuu",
                 "description": "An ambitious A.I. based roleplaying app to make any imaginations come true, while bringing the community closer. Adventure games, 'tiktok', syntetized voices, character animations, dynamic backgrounds."

@@ -1,4 +1,5 @@
 import { JSX, Component } from 'solid-js';
+import { Divider } from './Divider';
 
 interface BaseTypography {
     children: JSX.Element | string | (JSX.Element | string)[];
@@ -21,7 +22,7 @@ type TitleProps = {
 export const Title: Component<TitleProps> = (props) => {
     return (
         <div class='py-3'>
-            {props.displayDivider && <hr class="border-sky-600 w-[50px] border-[2.5px]" />} {/* Adjusted the border thickness */}
+            {props.displayDivider && <Divider />}
             <h1 class="text-slate-100 text-2xl py-1.5 font-title font-bold">{props.children}</h1>
         </div>
     );

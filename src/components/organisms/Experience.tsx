@@ -2,8 +2,8 @@ import { Component } from "solid-js";
 import { useTransContext } from "@mbarzda/solid-i18next";
 
 import { Title } from "@atoms/Typography";
-import { ProjectsBlock } from "@molecules/Experience/ProjectBlock";
-import { WorkBlock } from "@molecules/Experience/WorkBlock";
+import { ProjectsBlock } from "@organisms/ProjectBlock";
+import { WorkBlock } from "@organisms/WorkBlock";
 
 export const Experience: Component = () => {
     const [t] = useTransContext();

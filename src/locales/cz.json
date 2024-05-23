@@ -33,14 +33,6 @@
                 "title": "Meetu",
                 "description": "Meetu je klon Twitteru vyvinutý jako závěrečný absolventský projekt na téma vývoje webových aplikací. Obsahuje komplexní backend s CRUD operacemi pro Tweety a chat v reálném čase."
             },
-            "novaZeme": {
-                "title": "Nová Země",
-                "description": "End-to-end šifrovaná decentralizovaná mobilní aplikace vytvořená pro vytváření a správu soukromých skupin. Aplikace není veřejná; pro více informací mě prosím kontaktujte.",
-                "dialog": {
-                    "title": "Nová Země",
-                    "description": "Tento projekt je soukromý a není dostupný k veřejnému prohlížení. Pokud chcete získat více informací o tomto projektu, prosím kontaktujte mě."
-                }
-            },
             "waifuu": {
                 "title": "Waifuu",
                 "description": "Ambiciózní aplikace pro hraní rolí založená na AI, která splní všechny představy a zároveň přiblíží komunitu. Dobrodružné hry, 'tiktok', syntetizované hlasy, animace postav, dynamická pozadí."

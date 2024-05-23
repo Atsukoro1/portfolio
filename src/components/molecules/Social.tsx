@@ -1,10 +1,10 @@
 import { AiFillGithub, AiFillLinkedin } from 'solid-icons/ai'
-import { SiHackthebox } from 'solid-icons/si'
+import { SiGmail, SiHackthebox } from 'solid-icons/si'
 import { Component } from 'solid-js';
 
 type SocialProps = {
     href: string;
-    icon: 'github' | 'linkedin' | 'hackthebox';
+    icon: 'github' | 'linkedin' | 'hackthebox' | 'mail';
 };
 
 const IconRenderer = (icon: SocialProps['icon']) => {
@@ -15,6 +15,8 @@ const IconRenderer = (icon: SocialProps['icon']) => {
             return <AiFillLinkedin font-size="30px" />;
         case 'hackthebox':
             return <SiHackthebox font-size="30px" />;
+        case 'mail':
+            return <SiGmail font-size='30px' />
     }
 }
 

@@ -18,7 +18,7 @@
     },
     "experience": {
         "title": "About Me",
-        "textShort": "I am a {{age}}-year-old student and technology enthusiast. I have primarily built my knowledge and skills in the field of Web development, where I have been developing websites and applications for various e-shops and freelancers for several years.",
+        "textShort": "I am a {{age}}-year-old full-stack web developer and technology enthusiast. I have primarily built my knowledge and skills in the field of Web development, where I have been developing websites and applications for various e-shops and freelancers for several years.",
         "textWorkStuff": "Besides web development, I am involved in cybersecurity which I'm training on HackTheBox and TryHackMe & networking (system administration).",
         "textHobbies": "Outside of IT, my main interests include DJ'ing, virtual reality (VRChat) and psychology."
     },

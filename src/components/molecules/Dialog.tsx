@@ -29,7 +29,7 @@ export const Dialog: Component<DialogProps> = (props) => {
                 "fixed inset-0 flex items-center justify-center z-50"
             ])}>
                 <div class={twMerge([
-                    "absolute bg-slate-800 p-4 rounded-lg w-1/2 z-10 mx-auto"
+                    "absolute bg-slate-800 p-4 rounded-lg w-3/4 lg:w-1/2 z-10 mx-auto"
                 ])}>
                     <div>
                         {props.title && <DialogTitle title={props.title} />}

@@ -40,6 +40,10 @@
                     "title": "New Land",
                     "description": "This project is private and is not available for public viewing. If you wan't to get more information about this project, please contact me."
                 }
+            },
+            "waifuu": {
+                "title": "Waifuu",
+                "description": "An ambitious A.I. based roleplaying app to make any imaginations come true, while bringing the community closer. Adventure games, 'tiktok', syntetized voices, character animations, dynamic backgrounds."
             }
         }
     },
@@ -50,7 +54,7 @@
                 "title": "Medior Web Developer",
                 "company": "Blindspot AI",
                 "position": "Frontend Developer",
-                "description": ""
+                "description": "During my time at Blindspot, I worked on several data-based applications for large corporations. These were complex, data-focused applications developed using Next.js and React."
             },
             "viceverse": {
                 "title": "Senior Frontend Developer",

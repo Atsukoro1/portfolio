@@ -28,6 +28,7 @@ export const Navbar: Component = () => {
                 </nav>
             </div>
 
+
             <div class="lg:fixed lg:bottom-10 flex flex-col gap-3 mt-5 relative">
                 <LanguageSwitch />
 

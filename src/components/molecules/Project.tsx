@@ -20,7 +20,7 @@ interface ProjectProps {
         title: string;
         content?: string | JSX.Element;
     };
-    href: string | null;
+    href?: string | null;
     hovered: boolean | null;
     type: ProjectType;
     onClick?: VoidFunction;

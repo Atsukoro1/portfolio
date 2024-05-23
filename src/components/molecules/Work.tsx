@@ -16,7 +16,7 @@ type WorkProps = {
 export const Work: Component<WorkProps> = (props) => {
     return (
         <div
-            class={`${props.hovered === null ? "opacity-100" : (props.hovered ? "opacity-100" : "opacity-40")} flex group hover:cursor-pointer flex-col lg:flex-row lg:gap-10 gap-4 p-4 border border-transparent transition-all ease-in-out transition-500 rounded-lg hover:bg-slate-200 hover:bg-opacity-[3%] hover:border-slate-600 hover:border-opacity-30`}
+            class={`${props.hovered === null ? "opacity-100" : (props.hovered ? "opacity-100" : "opacity-40")} flex group hover:cursor-default flex-col lg:flex-row lg:gap-10 gap-4 p-4 border border-transparent transition-all ease-in-out transition-500 rounded-lg hover:bg-slate-200 hover:bg-opacity-[3%] hover:border-slate-600 hover:border-opacity-30`}
             onMouseEnter={props.onHoverStart}
             onMouseLeave={props.onHoverStop}
         >

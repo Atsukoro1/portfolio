@@ -15,11 +15,15 @@ type TextBlockProps = BaseTypography & {
 
 type TitleProps = {
     children: JSX.Element | string;
+    displayDivider?: boolean;
 }
 
 export const Title: Component<TitleProps> = (props) => {
     return (
-        <h1 class="text-slate-100 text-2xl py-3 font-title font-bold">{props.children}</h1>
+        <div class='py-3'>
+            {props.displayDivider && <hr class="border-sky-600 w-[50px] border-[2.5px]" />} {/* Adjusted the border thickness */}
+            <h1 class="text-slate-100 text-2xl py-1.5 font-title font-bold">{props.children}</h1>
+        </div>
     );
 }
 

@@ -40,6 +40,10 @@
                     "title": "Nová Země",
                     "description": "Tento projekt je soukromý a není dostupný k veřejnému prohlížení. Pokud chcete získat více informací o tomto projektu, prosím kontaktujte mě."
                 }
+            },
+            "waifuu": {
+                "title": "Waifuu",
+                "description": "Ambiciózní aplikace pro hraní rolí založená na AI, která splní všechny představy a zároveň přiblíží komunitu. Dobrodružné hry, 'tiktok', syntetizované hlasy, animace postav, dynamická pozadí."
             }
         }
     },
@@ -50,7 +54,7 @@
                 "title": "Medior Web Developer",
                 "company": "Blindspot AI",
                 "position": "Frontend Developer",
-                "description": ""
+                "description": "Během mého působení v Blindspotu jsem pracoval na několika databázových aplikacích pro velké korporace. Jednalo se o komplexní, na data zaměřené aplikace vyvinuté pomocí Next.js a Reactu."
             },
             "viceverse": {
                 "title": "Senior Frontend Developer",

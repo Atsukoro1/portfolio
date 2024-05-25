@@ -1,6 +1,6 @@
 import { useTransContext } from "@mbarzda/solid-i18next";
 import { Project, ProjectType } from "@molecules/Project";
-import { Component, createSignal } from "solid-js";
+import { type Component, createSignal } from "solid-js";
 
 export const ProjectsBlock: Component = () => {
 	const [t] = useTransContext();

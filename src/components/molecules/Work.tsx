@@ -1,6 +1,6 @@
 import { Technology } from "@atoms/Technology";
 import { TextBlock } from "@atoms/Typography";
-import { Component } from "solid-js";
+import { For, type Component } from "solid-js";
 
 type WorkProps = {
 	fromDate: string;
@@ -17,13 +17,12 @@ type WorkProps = {
 export const Work: Component<WorkProps> = (props) => {
 	return (
 		<div
-			class={`${
-				props.hovered === null
+			class={`${props.hovered === null
+				? "opacity-100"
+				: props.hovered
 					? "opacity-100"
-					: props.hovered
-						? "opacity-100"
-						: "opacity-40"
-			} flex group hover:cursor-default flex-col lg:flex-row lg:gap-10 gap-4 p-4 border border-transparent transition-all ease-in-out transition-500 rounded-lg hover:bg-slate-200 hover:bg-opacity-[3%] hover:border-slate-600 hover:border-opacity-30`}
+					: "opacity-40"
+				} flex group hover:cursor-default flex-col lg:flex-row lg:gap-10 gap-4 p-4 border border-transparent transition-all ease-in-out transition-500 rounded-lg hover:bg-slate-200 hover:bg-opacity-[3%] hover:border-slate-600 hover:border-opacity-30`}
 			onMouseEnter={props.onHoverStart}
 			onMouseLeave={props.onHoverStop}
 		>
@@ -45,9 +44,11 @@ export const Work: Component<WorkProps> = (props) => {
 				</TextBlock>
 
 				<div class="w-fit gap-2 mt-4 flex flex-wrap">
-					{props.technologies.map((technology) => (
-						<Technology content={technology} />
-					))}
+					<For each={props.technologies}>
+						{(technology) => (
+							<Technology content={technology} />
+						)}
+					</For>
 				</div>
 			</section>
 		</div>

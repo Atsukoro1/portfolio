@@ -1,4 +1,4 @@
-import { Component } from "solid-js";
+import type { Component } from "solid-js";
 import { useTransContext } from "@mbarzda/solid-i18next";
 
 import { Title } from "@atoms/Typography";

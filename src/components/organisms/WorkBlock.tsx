@@ -1,6 +1,6 @@
 import { useTransContext } from "@mbarzda/solid-i18next";
 import { Work } from "@molecules/Work";
-import { Component, createSignal } from "solid-js";
+import { type Component, createSignal } from "solid-js";
 
 export const WorkBlock: Component = () => {
 	const [t] = useTransContext();

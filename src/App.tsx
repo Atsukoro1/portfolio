@@ -1,4 +1,5 @@
 import "/node_modules/flag-icons/css/flag-icons.min.css";
+
 import cz from "./locales/cz.json";
 import en from "./locales/en.json";
 

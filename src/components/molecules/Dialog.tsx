@@ -1,6 +1,6 @@
 import { Button } from "@atoms/Button";
 import { useTransContext } from "@mbarzda/solid-i18next";
-import { Component, JSX, Show } from "solid-js";
+import { type Component, type JSX, Show } from "solid-js";
 import { twMerge } from "tailwind-merge";
 
 interface DialogProps {

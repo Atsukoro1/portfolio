@@ -1,4 +1,4 @@
-import { Component, JSX } from "solid-js";
+import type { Component, JSX } from "solid-js";
 import { cva } from "class-variance-authority";
 
 type ButtonVariant = "primary" | "danger" | "outline";

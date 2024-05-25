@@ -1,8 +1,8 @@
 import {
-	Accessor,
-	Component,
-	JSX,
-	Setter,
+	type Accessor,
+	type Component,
+	type JSX,
+	type Setter,
 	createContext,
 	createSignal,
 	useContext,

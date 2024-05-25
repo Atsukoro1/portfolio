@@ -1,4 +1,4 @@
-import { Component, JSX, createSignal } from "solid-js";
+import { type Component, type JSX, createSignal, For } from "solid-js";
 import { FiLink2 } from "solid-icons/fi";
 import { twMerge } from "tailwind-merge";
 
@@ -55,9 +55,11 @@ const ProjectContentSection: Component<ProjectProps> = (props) => {
 			</TextBlock>
 
 			<div class="w-fit gap-2 mt-4 flex flex-wrap">
-				{props.technologies.map((technology) => (
-					<Technology content={technology} />
-				))}
+				<For each={props.technologies}>
+					{(technology) => (
+						<Technology content={technology} />
+					)}
+				</For>
 			</div>
 		</section>
 	);

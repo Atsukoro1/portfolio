@@ -1,65 +1,65 @@
 {
-    "common": {
-        "close": "Close",
-        "confirm": "Confirm",
-        "now": "Now"
-    },
-    "langSwitchTitle": "Přepnout do češtiny",
-    "header": {
-        "introduction": "👋 Hello, my name is",
-        "name": "Jakub Dorničák",
-        "title": "Medior Web Developer at Blindspot AI",
-        "description": "Building innovative, modern, and user-friendly websites and applications.",
-        "options": {
-            "aboutMe": "About Me",
-            "experience": "Work Experience",
-            "projects": "Projects"
-        }
-    },
-    "experience": {
-        "title": "About Me",
-        "textShort": "I am a {{age}}-year-old full-stack web developer and technology enthusiast. I have primarily built my knowledge and skills in the field of Web development, where I have been developing websites and applications for various e-shops and freelancers for several years.",
-        "textWorkStuff": "Besides web development, I am involved in cybersecurity which I'm training on HackTheBox and TryHackMe & networking (system administration).",
-        "textHobbies": "Outside of IT, my main interests include DJ'ing, virtual reality (VRChat) and psychology."
-    },
-    "projects": {
-        "title": "Projects",
-        "content": {
-            "doucInfo": {
-                "title": "Douc.info",
-                "description": "Douc.info is an e-shop and a tutoring platform that connects tutors and students interested in learning more about law and accounting. It includes a functional payment system."
-            },
-            "contalk": {
-                "title": "Meetu",
-                "description": "Meetu is a Twitter clone developed as part of the final graduation project on the topic of Web Application Development. It includes a complex backend with CRUD operations for Tweets and real-time chat."
-            },
-            "waifuu": {
-                "title": "Waifuu",
-                "description": "An ambitious A.I. based roleplaying app to make any imaginations come true, while bringing the community closer. Adventure games, 'tiktok', syntetized voices, character animations, dynamic backgrounds."
-            }
-        }
-    },
-    "work": {
-        "title": "Work Experience",
-        "content": {
-            "blindspot": {
-                "title": "Medior Web Developer",
-                "company": "Blindspot AI",
-                "position": "Frontend Developer",
-                "description": "During my time at Blindspot, I worked on several data-based applications for large corporations. These were complex, data-focused applications developed using Next.js and React."
-            },
-            "viceverse": {
-                "title": "Senior Frontend Developer",
-                "company": "Viceverse",
-                "position": "Frontend Developer",
-                "description": "I developed e-shops here without using CMS systems. Everything was developed from scratch. Besides the development itself, I was involved in architecture design and server maintenance."
-            },
-            "woolville": {
-                "title": "Webmaster",
-                "company": "Woolville",
-                "position": "Webmaster",
-                "description": "I managed the Woolville website, which is built on the Silius CMS system. I added new products, updated information, and took care of SEO."
-            }
-        }
-    }
+	"common": {
+		"close": "Close",
+		"confirm": "Confirm",
+		"now": "Now"
+	},
+	"langSwitchTitle": "Přepnout do češtiny",
+	"header": {
+		"introduction": "👋 Hello, my name is",
+		"name": "Jakub Dorničák",
+		"title": "Medior Web Developer at Blindspot AI",
+		"description": "Building innovative, modern, and user-friendly websites and applications.",
+		"options": {
+			"aboutMe": "About Me",
+			"experience": "Work Experience",
+			"projects": "Projects"
+		}
+	},
+	"experience": {
+		"title": "About Me",
+		"textShort": "I am a {{age}}-year-old full-stack web developer and technology enthusiast. I have primarily built my knowledge and skills in the field of Web development, where I have been developing websites and applications for various e-shops and freelancers for several years.",
+		"textWorkStuff": "Besides web development, I am involved in cybersecurity which I'm training on HackTheBox and TryHackMe & networking (system administration).",
+		"textHobbies": "Outside of IT, my main interests include DJ'ing, virtual reality (VRChat) and psychology."
+	},
+	"projects": {
+		"title": "Projects",
+		"content": {
+			"doucInfo": {
+				"title": "Douc.info",
+				"description": "Douc.info is an e-shop and a tutoring platform that connects tutors and students interested in learning more about law and accounting. It includes a functional payment system."
+			},
+			"contalk": {
+				"title": "Meetu",
+				"description": "Meetu is a Twitter clone developed as part of the final graduation project on the topic of Web Application Development. It includes a complex backend with CRUD operations for Tweets and real-time chat."
+			},
+			"waifuu": {
+				"title": "Waifuu",
+				"description": "An ambitious A.I. based roleplaying app to make any imaginations come true, while bringing the community closer. Adventure games, 'tiktok', syntetized voices, character animations, dynamic backgrounds."
+			}
+		}
+	},
+	"work": {
+		"title": "Work Experience",
+		"content": {
+			"blindspot": {
+				"title": "Medior Web Developer",
+				"company": "Blindspot AI",
+				"position": "Frontend Developer",
+				"description": "During my time at Blindspot, I worked on several data-based applications for large corporations. These were complex, data-focused applications developed using Next.js and React."
+			},
+			"viceverse": {
+				"title": "Senior Frontend Developer",
+				"company": "Viceverse",
+				"position": "Frontend Developer",
+				"description": "I developed e-shops here without using CMS systems. Everything was developed from scratch. Besides the development itself, I was involved in architecture design and server maintenance."
+			},
+			"woolville": {
+				"title": "Webmaster",
+				"company": "Woolville",
+				"position": "Webmaster",
+				"description": "I managed the Woolville website, which is built on the Silius CMS system. I added new products, updated information, and took care of SEO."
+			}
+		}
+	}
 }

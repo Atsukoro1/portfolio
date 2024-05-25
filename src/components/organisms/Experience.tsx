@@ -6,19 +6,19 @@ import { ProjectsBlock } from "@organisms/ProjectBlock";
 import { WorkBlock } from "@organisms/WorkBlock";
 
 export const Experience: Component = () => {
-    const [t] = useTransContext();
+	const [t] = useTransContext();
 
-    return (
-        <div class="flex flex-col gap-5">
-            <div>
-                <Title displayDivider>{t('work.title')}</Title>
-                <WorkBlock />
-            </div>
+	return (
+		<div class="flex flex-col gap-5">
+			<div>
+				<Title displayDivider>{t("work.title")}</Title>
+				<WorkBlock />
+			</div>
 
-            <div>
-                <Title displayDivider>{t('projects.title')}</Title>
-                <ProjectsBlock />
-            </div>
-        </div>
-    )
-}
+			<div>
+				<Title displayDivider>{t("projects.title")}</Title>
+				<ProjectsBlock />
+			</div>
+		</div>
+	);
+};

@@ -1,65 +1,65 @@
 {
-    "common": {
-        "close": "Zavřít",
-        "confirm": "Potvrdit",
-        "now": "Nyní"
-    },
-    "langSwitchTitle": "Switch to english",
-    "header": {
-        "introduction": "👋 Ahoj, jmenuji se",
-        "name": "Jakub Dorničák",
-        "title": "Medior Web Developer ve společnosti Blindspot AI",
-        "description": "Vytvářím inovativní, moderní a uživatelsky přívětivé webové stránky a aplikace.",
-        "options": {
-            "aboutMe": "O mně",
-            "experience": "Pracovní zkušenosti",
-            "projects": "Projekty"
-        }
-    },
-    "experience": {
-        "title": "O mně",
-        "textShort": "Jsem {{age}}-letý student a nadšenec do technologií. Především jsem si vybudoval své znalosti a dovednosti v oblasti webového vývoje, kde jsem několik let vyvíjel webové stránky a aplikace pro různé e-shopy a freelancery.",
-        "textWorkStuff": "Kromě webového vývoje se věnuji kybernetické bezpečnosti, kterou trénuji na HackTheBox a TryHackMe, a síťové správě (systémová administrace).",
-        "textHobbies": "Mimo IT jsou mé hlavní zájmy DJ'ing, virtuální realita (VRChat) a psychologie."
-    },
-    "projects": {
-        "title": "Projekty",
-        "content": {
-            "doucInfo": {
-                "title": "Douc.info",
-                "description": "Douc.info je e-shop a platforma pro doučování, která spojuje lektory a studenty se zájmem o právo a účetnictví. Obsahuje funkční platební systém."
-            },
-            "contalk": {
-                "title": "Meetu",
-                "description": "Meetu je klon Twitteru vyvinutý jako závěrečný absolventský projekt na téma vývoje webových aplikací. Obsahuje komplexní backend s CRUD operacemi pro Tweety a chat v reálném čase."
-            },
-            "waifuu": {
-                "title": "Waifuu",
-                "description": "Ambiciózní aplikace pro hraní rolí založená na AI, která splní všechny představy a zároveň přiblíží komunitu. Dobrodružné hry, 'tiktok', syntetizované hlasy, animace postav, dynamická pozadí."
-            }
-        }
-    },
-    "work": {
-        "title": "Pracovní zkušenosti",
-        "content": {
-            "blindspot": {
-                "title": "Medior Web Developer",
-                "company": "Blindspot AI",
-                "position": "Frontend Developer",
-                "description": "Během mého působení v Blindspotu jsem pracoval na několika databázových aplikacích pro velké korporace. Jednalo se o komplexní, na data zaměřené aplikace vyvinuté pomocí Next.js a Reactu."
-            },
-            "viceverse": {
-                "title": "Senior Frontend Developer",
-                "company": "Viceverse",
-                "position": "Frontend Developer",
-                "description": "Vyvíjel jsem zde e-shopy bez použití CMS systémů. Vše bylo vyvíjeno od nuly. Kromě samotného vývoje jsem se podílel na návrhu architektury a údržbě serverů."
-            },
-            "woolville": {
-                "title": "Webmaster",
-                "company": "Woolville",
-                "position": "Webmaster",
-                "description": "Spravoval jsem web Woolville, který je postaven na Silius CMS systému. Přidával jsem nové produkty, aktualizoval informace a staral se o SEO."
-            }
-        }
-    }
+	"common": {
+		"close": "Zavřít",
+		"confirm": "Potvrdit",
+		"now": "Nyní"
+	},
+	"langSwitchTitle": "Switch to english",
+	"header": {
+		"introduction": "👋 Ahoj, jmenuji se",
+		"name": "Jakub Dorničák",
+		"title": "Medior Web Developer ve společnosti Blindspot AI",
+		"description": "Vytvářím inovativní, moderní a uživatelsky přívětivé webové stránky a aplikace.",
+		"options": {
+			"aboutMe": "O mně",
+			"experience": "Pracovní zkušenosti",
+			"projects": "Projekty"
+		}
+	},
+	"experience": {
+		"title": "O mně",
+		"textShort": "Jsem {{age}}-letý student a nadšenec do technologií. Především jsem si vybudoval své znalosti a dovednosti v oblasti webového vývoje, kde jsem několik let vyvíjel webové stránky a aplikace pro různé e-shopy a freelancery.",
+		"textWorkStuff": "Kromě webového vývoje se věnuji kybernetické bezpečnosti, kterou trénuji na HackTheBox a TryHackMe, a síťové správě (systémová administrace).",
+		"textHobbies": "Mimo IT jsou mé hlavní zájmy DJ'ing, virtuální realita (VRChat) a psychologie."
+	},
+	"projects": {
+		"title": "Projekty",
+		"content": {
+			"doucInfo": {
+				"title": "Douc.info",
+				"description": "Douc.info je e-shop a platforma pro doučování, která spojuje lektory a studenty se zájmem o právo a účetnictví. Obsahuje funkční platební systém."
+			},
+			"contalk": {
+				"title": "Meetu",
+				"description": "Meetu je klon Twitteru vyvinutý jako závěrečný absolventský projekt na téma vývoje webových aplikací. Obsahuje komplexní backend s CRUD operacemi pro Tweety a chat v reálném čase."
+			},
+			"waifuu": {
+				"title": "Waifuu",
+				"description": "Ambiciózní aplikace pro hraní rolí založená na AI, která splní všechny představy a zároveň přiblíží komunitu. Dobrodružné hry, 'tiktok', syntetizované hlasy, animace postav, dynamická pozadí."
+			}
+		}
+	},
+	"work": {
+		"title": "Pracovní zkušenosti",
+		"content": {
+			"blindspot": {
+				"title": "Medior Web Developer",
+				"company": "Blindspot AI",
+				"position": "Frontend Developer",
+				"description": "Během mého působení v Blindspotu jsem pracoval na několika databázových aplikacích pro velké korporace. Jednalo se o komplexní, na data zaměřené aplikace vyvinuté pomocí Next.js a Reactu."
+			},
+			"viceverse": {
+				"title": "Senior Frontend Developer",
+				"company": "Viceverse",
+				"position": "Frontend Developer",
+				"description": "Vyvíjel jsem zde e-shopy bez použití CMS systémů. Vše bylo vyvíjeno od nuly. Kromě samotného vývoje jsem se podílel na návrhu architektury a údržbě serverů."
+			},
+			"woolville": {
+				"title": "Webmaster",
+				"company": "Woolville",
+				"position": "Webmaster",
+				"description": "Spravoval jsem web Woolville, který je postaven na Silius CMS systému. Přidával jsem nové produkty, aktualizoval informace a staral se o SEO."
+			}
+		}
+	}
 }
